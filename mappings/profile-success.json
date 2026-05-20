@@ -1,0 +1,23 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/api/perfil",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer mock-govbr-access-token-12345"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "nome_civil": "Administrador Sistema GovBr",
+      "cpf": "11122233344",
+      "nivel_conta": "OURO",
+      "email": "admin@regulasus.gov.br"
+    }
+  }
+}

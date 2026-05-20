@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  wiremock:
+    image: wiremock/wiremock:3.5.2
+    container_name: regulasus-govbr-mock
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./mappings:/home/wiremock/mappings
+      - ./__files:/home/wiremock/__files
+    command:
+      - --global-response-templating
+      - --disable-gzip

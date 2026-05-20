@@ -1,0 +1,23 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/api/perfil",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer mock-govbr-access-token-timeout"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "fixedDelayMilliseconds": 6000,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "nome_civil": "Usuário Atrasado",
+      "cpf": "99999999999",
+      "nivel_conta": "PRATA"
+    }
+  }
+}
